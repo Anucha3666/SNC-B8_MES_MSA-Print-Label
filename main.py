@@ -1,8 +1,9 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from utils import print_ascii_art, read_zpl_file, print_zpl, generate_zpl_label
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+from utils import generate_zpl_label, print_ascii_art, print_zpl, read_zpl_file
 
 app = Flask(__name__)
 CORS(app)
